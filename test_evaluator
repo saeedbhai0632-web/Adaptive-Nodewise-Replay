@@ -1,0 +1,28 @@
+from src.evaluator import save_results,plot_experiment_a,summarize_experiment_a
+
+rhos=[0.0,0.05,0.10,0.20,0.40]
+results=[]
+
+for node in range(1,5):
+    for rho in rhos:
+        forgetting=0.13/(1+7*rho)+(node-2)*0.006
+        domain_improvement=0.20-0.28*rho-abs(node-2.5)*0.012
+
+        results.append({
+            "node":node,
+            "replay_ratio":rho,
+            "general_loss_before":1.70,
+            "general_loss_after":1.70+forgetting,
+            "forgetting":forgetting,
+            "domain_loss_before":2.50,
+            "domain_loss_after":2.50-domain_improvement,
+            "domain_improvement":domain_improvement,
+            "replay_tokens":int(100000*rho),
+            "training_seconds":120
+        })
+
+output_dir="./experiments/evaluator_demo"
+
+save_results(results,output_dir)
+plot_experiment_a(results,output_dir+"/plots")
+summarize_experiment_a(results)

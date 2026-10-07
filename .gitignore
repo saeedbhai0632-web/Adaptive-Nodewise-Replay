@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+
+pretrained/
+
+experiments/checkpoints/
+experiments/pilot/*/model.safetensors
+
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+.DS_Store

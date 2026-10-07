@@ -1,0 +1,21 @@
+{
+  "general_loss_before": 2.314480360539459,
+  "general_loss_after": 2.317913707740414,
+  "forgetting": 0.003433347200955339,
+  "domain_loss_before": 2.2583112590710384,
+  "domain_loss_after": 1.8801217955827798,
+  "domain_improvement": 0.37818946348825855,
+  "replay_ratio": 0.0,
+  "replay_tokens": 0,
+  "training_seconds": 51.1393027305603,
+  "general_loss_change_pct": 0.14834203216808003,
+  "domain_loss_change_pct": -16.746560597843704,
+  "domain_improvement_per_replay_token": null,
+  "node": 2,
+  "general_ppl_before": 10.11966297601505,
+  "general_ppl_after": 10.154467005538253,
+  "domain_ppl_before": 9.566919468920643,
+  "domain_ppl_after": 6.5543030987449455,
+  "general_eval_tokens": 208865,
+  "domain_eval_tokens": 236508
+}

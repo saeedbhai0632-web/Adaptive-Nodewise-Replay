@@ -1,0 +1,185 @@
+import os
+import json
+from src.evaluator import save_results,plot_experiment_a,summarize_experiment_a
+
+RUNS_DIR="./experiments/results/experimentA/runs"
+RESULTS_DIR="./experiments/results/experimentA"
+
+results=[]
+
+for dirname in sorted(os.listdir(RUNS_DIR)):
+    run_dir=os.path.join(RUNS_DIR,dirname)
+
+    if not os.path.isdir(run_dir):
+        continue
+
+    json_files=[f for f in os.listdir(run_dir) if f.endswith(".json")]
+
+    if not json_files:
+        continue
+
+    path=os.path.join(run_dir,json_files[0])
+
+    with open(path,"r") as f:
+        data=json.load(f)
+
+    # Get node, rho and seed from directory name
+    # Example: node4_rho005_seed42
+    parts=dirname.split("_")
+
+    node=int(parts[0][4:])
+    rho=int(parts[1][3:])/100
+    seed=int(parts[2][4:])
+
+    data["node"]=node
+    data["replay_ratio"]=rho
+    data["seed"]=seed
+
+    results.append(data)
+
+results.sort(
+    key=lambda x:(x["node"],x["replay_ratio"],x["seed"])
+)
+
+print()
+print("Total results found:",len(results))
+
+for node in [1,2,3,4]:
+    count=sum(1 for r in results if r["node"]==node)
+    print(f"Node {node}: {count}")
+
+if len(results)!=60:
+    raise ValueError("Expected 60 results!")
+
+# Save corrected aggregate JSON
+path=os.path.join(
+    RESULTS_DIR,
+    "experimentA_all_results.json"
+)
+
+with open(path,"w") as f:
+    json.dump(results,f,indent=2)
+
+print("Saved aggregate JSON")
+
+# Rebuild CSV
+save_results(
+    results,
+    output_dir=RESULTS_DIR
+)
+
+print("Saved aggregate CSV")
+
+# Rebuild plots
+plot_dir=os.path.join(
+    RESULTS_DIR,
+    "plots"
+)
+
+plot_experiment_a(
+    results,
+    output_dir=plot_dir
+)
+
+print("Rebuilt plots")
+
+# Rebuild summary
+summary=summarize_experiment_a(results)
+
+with open(
+    os.path.join(RESULTS_DIR,"experimentA_summary.json"),
+    "w"
+) as f:
+    json.dump(summary,f,indent=2)
+
+print("Saved summary")
+
+print()
+print("DONE!")import os
+import json
+from src.evaluator import save_results,plot_experiment_a,summarize_experiment_a
+
+RUNS_DIR="./experiments/results/experimentA/runs"
+RESULTS_DIR="./experiments/results/experimentA"
+
+results=[]
+
+for dirname in sorted(os.listdir(RUNS_DIR)):
+    run_dir=os.path.join(RUNS_DIR,dirname)
+
+    if not os.path.isdir(run_dir):
+        continue
+
+    json_files=[f for f in os.listdir(run_dir) if f.endswith(".json")]
+
+    if not json_files:
+        print("WARNING: no JSON:",dirname)
+        continue
+
+    for filename in json_files:
+        path=os.path.join(run_dir,filename)
+
+        with open(path,"r") as f:
+            data=json.load(f)
+
+        # Handle either a single result dict or a list of results
+        if isinstance(data,list):
+            results.extend(data)
+        elif isinstance(data,dict):
+            results.append(data)
+        else:
+            print("WARNING: unexpected JSON:",path)
+
+print()
+print("Total results found:",len(results))
+
+nodes=sorted(set(r["node"] for r in results))
+print("Nodes:",nodes)
+
+for node in nodes:
+    node_results=[r for r in results if r["node"]==node]
+    print(f"Node {node}: {len(node_results)} results")
+
+# Save the reconstructed aggregate
+aggregate_path=os.path.join(
+    RESULTS_DIR,
+    "experimentA_all_results.json"
+)
+
+with open(aggregate_path,"w") as f:
+    json.dump(results,f,indent=2)
+
+print()
+print("Saved:",aggregate_path)
+
+# Rebuild CSV
+save_results(results,output_dir=RESULTS_DIR)
+print("Rebuilt CSV")
+
+# Rebuild plots
+plot_dir=os.path.join(RESULTS_DIR,"plots")
+
+os.makedirs(plot_dir,exist_ok=True)
+
+plot_experiment_a(
+    results,
+    output_dir=plot_dir
+)
+
+print("Rebuilt plots:",plot_dir)
+
+# Rebuild summary
+summary=summarize_experiment_a(results)
+
+summary_path=os.path.join(
+    RESULTS_DIR,
+    "experimentA_summary.json"
+)
+
+with open(summary_path,"w") as f:
+    json.dump(summary,f,indent=2)
+
+print("Saved:",summary_path)
+
+print()
+print("DONE.")
