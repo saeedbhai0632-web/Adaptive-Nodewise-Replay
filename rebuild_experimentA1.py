@@ -9,10 +9,12 @@ results=[]
 
 for dirname in sorted(os.listdir(RUNS_DIR)):
     run_dir=os.path.join(RUNS_DIR,dirname)
-
+    
     if not os.path.isdir(run_dir):
         continue
 
+
+    
     json_files=[f for f in os.listdir(run_dir) if f.endswith(".json")]
 
     if not json_files:

@@ -1,0 +1,202 @@
+
+============================================================
+NODEREPLAY | nodereplay_init010_seed43
+init rho=0.1 | thresholds={'tau_f': 0.001, 'tau_low': 0.0003, 'tau_s': 0.02538}
+rounds=10 | local steps=100
+============================================================
+
+Loading controller data (anchor + per-node validation)...
+Anchor examples: 100
+Node 1 validation examples: 100
+Node 2 validation examples: 100
+Node 3 validation examples: 100
+Node 4 validation examples: 100
+
+
+============================================================
+Evaluating base model theta_0
+============================================================
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 5259.35it/s]
+
+General baseline...
+General loss: 2.3145
+
+Node 1 domain baseline...
+Node 1 loss: 2.1270
+
+Node 2 domain baseline...
+Node 2 loss: 2.0371
+
+Node 3 domain baseline...
+Node 3 loss: 1.5528
+
+Node 4 domain baseline...
+Node 4 loss: 2.0940
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 5122.56it/s]
+
+Base anchor loss (theta_0): 2.2870
+
+===== ROUND 1/10 =====
+
+--- Node 1 | rho=0.10 ---
+Device: cuda
+Training examples: 200
+Examples consumed: 200
+Step 1/100 | Loss: 2.0405
+Step 2/100 | Loss: 2.1977
+Step 3/100 | Loss: 2.1316
+Step 4/100 | Loss: 2.3525
+Step 5/100 | Loss: 1.6841
+Step 6/100 | Loss: 1.8544
+Step 7/100 | Loss: 2.2379
+Step 8/100 | Loss: 1.6532
+Step 9/100 | Loss: 2.5022
+Step 10/100 | Loss: 1.8811
+Step 11/100 | Loss: 2.2597
+Step 12/100 | Loss: 2.7976
+Step 13/100 | Loss: 2.2648
+Step 14/100 | Loss: 2.4962
+Step 15/100 | Loss: 2.4959
+Step 16/100 | Loss: 2.0596
+Step 17/100 | Loss: 2.9218
+Step 18/100 | Loss: 1.9438
+Step 19/100 | Loss: 2.4381
+Step 20/100 | Loss: 1.9556
+Step 21/100 | Loss: 2.2770
+Step 22/100 | Loss: 1.7918
+Step 23/100 | Loss: 2.3691
+Step 24/100 | Loss: 2.0878
+Step 25/100 | Loss: 1.9187
+Step 26/100 | Loss: 1.7776
+Step 27/100 | Loss: 1.8345
+Step 28/100 | Loss: 1.8973
+Step 29/100 | Loss: 2.1958
+Step 30/100 | Loss: 2.0798
+Step 31/100 | Loss: 1.9051
+Step 32/100 | Loss: 2.0123
+Step 33/100 | Loss: 1.7452
+Step 34/100 | Loss: 1.8061
+Step 35/100 | Loss: 2.0333
+Step 36/100 | Loss: 2.1333
+Step 37/100 | Loss: 2.6556
+Step 38/100 | Loss: 2.2985
+Step 39/100 | Loss: 1.6248
+Step 40/100 | Loss: 2.6875
+Step 41/100 | Loss: 2.0503
+Step 42/100 | Loss: 1.8723
+Step 43/100 | Loss: 2.4065
+Step 44/100 | Loss: 2.1266
+Step 45/100 | Loss: 2.1568
+Step 46/100 | Loss: 2.2200
+Step 47/100 | Loss: 1.8995
+Step 48/100 | Loss: 1.3310
+Step 49/100 | Loss: 2.4323
+Step 50/100 | Loss: 1.4264
+Step 51/100 | Loss: 1.9931
+Step 52/100 | Loss: 2.1001
+Step 53/100 | Loss: 2.6782
+Step 54/100 | Loss: 2.0864
+Step 55/100 | Loss: 2.4540
+Step 56/100 | Loss: 1.8127
+Step 57/100 | Loss: 2.0336
+Step 58/100 | Loss: 2.5523
+Step 59/100 | Loss: 2.4316
+Step 60/100 | Loss: 2.5432
+Step 61/100 | Loss: 2.3639
+Step 62/100 | Loss: 1.9046
+Step 63/100 | Loss: 2.3088
+Step 64/100 | Loss: 2.0382
+Step 65/100 | Loss: 2.1095
+Step 66/100 | Loss: 2.3180
+Step 67/100 | Loss: 2.0570
+Step 68/100 | Loss: 2.6061
+Step 69/100 | Loss: 1.8681
+Step 70/100 | Loss: 1.6742
+Step 71/100 | Loss: 2.2186
+Step 72/100 | Loss: 1.8854
+Step 73/100 | Loss: 1.7587
+Step 74/100 | Loss: 2.7232
+Step 75/100 | Loss: 2.0884
+Step 76/100 | Loss: 2.0470
+Step 77/100 | Loss: 1.7597
+Step 78/100 | Loss: 2.3666
+Step 79/100 | Loss: 2.0506
+Step 80/100 | Loss: 2.2599
+Step 81/100 | Loss: 2.5114
+Step 82/100 | Loss: 1.6438
+Step 83/100 | Loss: 1.7522
+Step 84/100 | Loss: 1.9177
+Step 85/100 | Loss: 1.8594
+Step 86/100 | Loss: 3.0745
+Step 87/100 | Loss: 2.6490
+Step 88/100 | Loss: 2.7573
+Step 89/100 | Loss: 2.4366
+Step 90/100 | Loss: 1.9524
+Step 91/100 | Loss: 1.9575
+Step 92/100 | Loss: 2.3690
+Step 93/100 | Loss: 2.1971
+Step 94/100 | Loss: 1.9460
+Step 95/100 | Loss: 2.4077
+Step 96/100 | Loss: 1.8669
+Step 97/100 | Loss: 2.1595
+Step 98/100 | Loss: 2.2425
+Step 99/100 | Loss: 2.1715
+Step 100/100 | Loss: 1.9441
+Node 1: forgetting F=-0.00047 | improvement P=+0.02405 | replay examples=20
+
+--- Node 2 | rho=0.10 ---
+Device: cuda
+Training examples: 200
+Examples consumed: 200
+Traceback (most recent call last):
+  File "/home/priya/Saeed/NodeReplay/run_experimentB.py", line 492, in <module>
+    execute(args,adaptive=True)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/priya/Saeed/NodeReplay/run_experimentB.py", line 289, in execute
+    global_model,history=run_nodereplay(
+                         ~~~~~~~~~~~~~~^
+        nodes=A2.NODES,
+        ^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        history_path=history_path
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/priya/Saeed/NodeReplay/src/nodereplay.py", line 144, in run_nodereplay
+    node_model=train(
+        node_model,
+    ...<2 lines>...
+        steps=local_steps
+    )
+  File "/home/priya/Saeed/NodeReplay/src/trainer.py", line 69, in train
+    optimizer.step()
+    ~~~~~~~~~~~~~~^^
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/adamw.py", line 243, in step
+    adamw(
+    ~~~~~^
+        params_with_grad,
+        ^^^^^^^^^^^^^^^^^
+    ...<18 lines>...
+        has_complex=has_complex,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 154, in maybe_fallback
+    return func(*args, **kwargs)
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/adamw.py", line 875, in adamw
+    func(
+    ~~~~^
+        params,
+        ^^^^^^^
+    ...<16 lines>...
+        has_complex=has_complex,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/adamw.py", line 699, in _multi_tensor_adamw
+    exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 446.00 MiB. GPU 0 has a total capacity of 44.55 GiB of which 364.94 MiB is free. Process 1161059 has 24.58 GiB memory in use. Including non-PyTorch memory, this process has 19.60 GiB memory in use. Of the allocated memory 17.59 GiB is allocated by PyTorch, and 1.69 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

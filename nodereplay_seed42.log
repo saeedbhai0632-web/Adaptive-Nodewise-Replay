@@ -1,0 +1,96 @@
+
+============================================================
+NODEREPLAY | nodereplay_init010_seed42
+init rho=0.1 | thresholds={'tau_f': 0.001, 'tau_low': 0.0003, 'tau_s': 0.02538}
+rounds=10 | local steps=100
+============================================================
+
+Loading controller data (anchor + per-node validation)...
+Anchor examples: 100
+Node 1 validation examples: 100
+Node 2 validation examples: 100
+Node 3 validation examples: 100
+Node 4 validation examples: 100
+
+
+============================================================
+Evaluating base model theta_0
+============================================================
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 5195.29it/s]
+
+General baseline...
+General loss: 2.3145
+
+Node 1 domain baseline...
+Node 1 loss: 2.1270
+
+Node 2 domain baseline...
+Node 2 loss: 2.0371
+
+Node 3 domain baseline...
+Node 3 loss: 1.5528
+
+Node 4 domain baseline...
+Node 4 loss: 2.0940
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 5057.42it/s]
+
+Base anchor loss (theta_0): 2.2870
+
+===== ROUND 1/10 =====
+
+--- Node 1 | rho=0.10 ---
+Device: cuda
+Training examples: 200
+Examples consumed: 200
+Traceback (most recent call last):
+  File "/home/priya/Saeed/NodeReplay/run_experimentB.py", line 492, in <module>
+    execute(args,adaptive=True)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/priya/Saeed/NodeReplay/run_experimentB.py", line 289, in execute
+    global_model,history=run_nodereplay(
+                         ~~~~~~~~~~~~~~^
+        nodes=A2.NODES,
+        ^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        history_path=history_path
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/priya/Saeed/NodeReplay/src/nodereplay.py", line 144, in run_nodereplay
+    node_model=train(
+        node_model,
+    ...<2 lines>...
+        steps=local_steps
+    )
+  File "/home/priya/Saeed/NodeReplay/src/trainer.py", line 69, in train
+    optimizer.step()
+    ~~~~~~~~~~~~~~^^
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 493, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/adamw.py", line 243, in step
+    adamw(
+    ~~~~~^
+        params_with_grad,
+        ^^^^^^^^^^^^^^^^^
+    ...<18 lines>...
+        has_complex=has_complex,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/optimizer.py", line 154, in maybe_fallback
+    return func(*args, **kwargs)
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/adamw.py", line 875, in adamw
+    func(
+    ~~~~^
+        params,
+        ^^^^^^^
+    ...<16 lines>...
+        has_complex=has_complex,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/priya/Saeed/NodeReplay/venv/lib/python3.13/site-packages/torch/optim/adamw.py", line 699, in _multi_tensor_adamw
+    exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB. GPU 0 has a total capacity of 44.55 GiB of which 960.00 KiB is free. Process 1161059 has 26.06 GiB memory in use. Including non-PyTorch memory, this process has 18.47 GiB memory in use. Of the allocated memory 17.25 GiB is allocated by PyTorch, and 920.60 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
