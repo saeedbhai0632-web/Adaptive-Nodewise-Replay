@@ -1,0 +1,32 @@
+{
+  "A2_fixed_rho000": [
+    "A2_seed42",
+    "A2_seed43",
+    "A2_seed44"
+  ],
+  "A2_fixed_rho005": [
+    "A2_seed42",
+    "A2_seed43",
+    "A2_seed44"
+  ],
+  "A2_fixed_rho010": [
+    "A2_seed42",
+    "A2_seed43",
+    "A2_seed44"
+  ],
+  "A2_fixed_rho020": [
+    "A2_seed42",
+    "A2_seed43",
+    "A2_seed44"
+  ],
+  "A2_fixed_rho040": [
+    "A2_seed42",
+    "A2_seed43",
+    "A2_seed44"
+  ],
+  "nodereplay(init=0.1)": [
+    "nodereplay_init010_seed42",
+    "nodereplay_init010_seed43",
+    "nodereplay_init010_seed44"
+  ]
+}

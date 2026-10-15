@@ -1,0 +1,572 @@
+[
+  {
+    "round": 1,
+    "global_anchor_loss": 2.2864340730114403,
+    "global_forgetting": -0.0005285243581396593,
+    "global_domain_loss": {
+      "1": 2.0809090983102574,
+      "2": 2.0980131442902628,
+      "3": 1.4413615968511375,
+      "4": 2.094541313648224
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 8505,
+        "local_anchor_loss": 2.2864466494466646,
+        "forgetting": -0.0005159479229153163,
+        "local_domain_loss": 2.066239883313344,
+        "improvement": 0.024454918396511705,
+        "next_rho": 0.05
+      },
+      {
+        "node": 2,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 8909,
+        "local_anchor_loss": 2.290142357355075,
+        "forgetting": 0.003179759985495245,
+        "local_domain_loss": 2.0167168678661818,
+        "improvement": 0.12060047752508041,
+        "next_rho": 0.2
+      },
+      {
+        "node": 3,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 7986,
+        "local_anchor_loss": 2.286998724713105,
+        "forgetting": 3.612734352520519e-05,
+        "local_domain_loss": 1.4081131937239484,
+        "improvement": 0.056306792766939395,
+        "next_rho": 0.1
+      },
+      {
+        "node": 4,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 8593,
+        "local_anchor_loss": 2.2882622866729374,
+        "forgetting": 0.001299689303357443,
+        "local_domain_loss": 2.0214501333236696,
+        "improvement": 0.1075454425811766,
+        "next_rho": 0.2
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "global_anchor_loss": 2.2864434721300633,
+    "global_forgetting": -0.0005191252395166934,
+    "global_domain_loss": {
+      "1": 2.0744135365250607,
+      "2": 2.074807424374192,
+      "3": 1.4280415284907204,
+      "4": 2.0726232433319094
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.05,
+        "replay_examples": 10,
+        "replay_tokens": 4128,
+        "local_anchor_loss": 2.2873757680380216,
+        "forgetting": 0.0004131706684415981,
+        "local_domain_loss": 2.063929405123425,
+        "improvement": 0.016979693186832456,
+        "next_rho": 0.05
+      },
+      {
+        "node": 2,
+        "rho": 0.2,
+        "replay_examples": 40,
+        "replay_tokens": 16079,
+        "local_anchor_loss": 2.2883499083801815,
+        "forgetting": 0.0013873110106015218,
+        "local_domain_loss": 2.0232321764544494,
+        "improvement": 0.07478096783581334,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 7248,
+        "local_anchor_loss": 2.2868028029849157,
+        "forgetting": -0.0001597943846642913,
+        "local_domain_loss": 1.4047360303516585,
+        "improvement": 0.03662556649947901,
+        "next_rho": 0.1
+      },
+      {
+        "node": 4,
+        "rho": 0.2,
+        "replay_examples": 40,
+        "replay_tokens": 16860,
+        "local_anchor_loss": 2.287628828241122,
+        "forgetting": 0.0006662308715421617,
+        "local_domain_loss": 2.0178884410858156,
+        "improvement": 0.07665287256240827,
+        "next_rho": 0.2
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "global_anchor_loss": 2.2863509804649316,
+    "global_forgetting": -0.0006116169046483932,
+    "global_domain_loss": {
+      "1": 2.070712674347311,
+      "2": 2.0604174876500996,
+      "3": 1.4196439238948706,
+      "4": 2.0542769193649293
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.05,
+        "replay_examples": 10,
+        "replay_tokens": 3485,
+        "local_anchor_loss": 2.2880583789275906,
+        "forgetting": 0.0010957815580106,
+        "local_domain_loss": 2.0614394588527083,
+        "improvement": 0.012974077672352369,
+        "next_rho": 0.1
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33628,
+        "local_anchor_loss": 2.2870631973677558,
+        "forgetting": 0.00010059999817579879,
+        "local_domain_loss": 2.029238701534129,
+        "improvement": 0.04556872284006319,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 7375,
+        "local_anchor_loss": 2.2875439186730007,
+        "forgetting": 0.000581321303420701,
+        "local_domain_loss": 1.4027401482859971,
+        "improvement": 0.02530138020472328,
+        "next_rho": 0.1
+      },
+      {
+        "node": 4,
+        "rho": 0.2,
+        "replay_examples": 40,
+        "replay_tokens": 16370,
+        "local_anchor_loss": 2.288334356949067,
+        "forgetting": 0.0013717595794870974,
+        "local_domain_loss": 2.0072965884208678,
+        "improvement": 0.06532665491104162,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 4,
+    "global_anchor_loss": 2.286583914360357,
+    "global_forgetting": -0.0003786830092229465,
+    "global_domain_loss": {
+      "1": 2.067680593467913,
+      "2": 2.0453038990391628,
+      "3": 1.4141170358962196,
+      "4": 2.0413006019592284
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 8923,
+        "local_anchor_loss": 2.2878841167322053,
+        "forgetting": 0.0009215193626253004,
+        "local_domain_loss": 2.0617072913839194,
+        "improvement": 0.009005382963391817,
+        "next_rho": 0.1
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33809,
+        "local_anchor_loss": 2.286851440519875,
+        "forgetting": -0.00011115684970475215,
+        "local_domain_loss": 2.0113966563332615,
+        "improvement": 0.0490208313168381,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 7770,
+        "local_anchor_loss": 2.2876367374878375,
+        "forgetting": 0.0006741401182575046,
+        "local_domain_loss": 1.4017766155857654,
+        "improvement": 0.017867308309105212,
+        "next_rho": 0.1
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33558,
+        "local_anchor_loss": 2.286832119312214,
+        "forgetting": -0.0001304780573661013,
+        "local_domain_loss": 2.0047620868682863,
+        "improvement": 0.04951483249664301,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 5,
+    "global_anchor_loss": 2.2864224087686527,
+    "global_forgetting": -0.0005401886009273049,
+    "global_domain_loss": {
+      "1": 2.06548771780601,
+      "2": 2.030636783468433,
+      "3": 1.4093413231814804,
+      "4": 2.031945970058441
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 8667,
+        "local_anchor_loss": 2.287677554359545,
+        "forgetting": 0.0007149569899649322,
+        "local_domain_loss": 2.0597959695944152,
+        "improvement": 0.007884623873497976,
+        "next_rho": 0.1
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33578,
+        "local_anchor_loss": 2.2873621492910634,
+        "forgetting": 0.0003995519214834431,
+        "local_domain_loss": 1.9983884089958508,
+        "improvement": 0.04691549004331197,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 8851,
+        "local_anchor_loss": 2.2880460368104636,
+        "forgetting": 0.0010834394408836268,
+        "local_domain_loss": 1.3998039080292288,
+        "improvement": 0.014313127866990794,
+        "next_rho": 0.2
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33326,
+        "local_anchor_loss": 2.2871872880477007,
+        "forgetting": 0.0002246906781206981,
+        "local_domain_loss": 2.0026252365112303,
+        "improvement": 0.0386753654479981,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 6,
+    "global_anchor_loss": 2.287016238846513,
+    "global_forgetting": 5.364147693320831e-05,
+    "global_domain_loss": {
+      "1": 2.0644582637923374,
+      "2": 2.0229529655253256,
+      "3": 1.4076754596167995,
+      "4": 2.0229868960380553
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.1,
+        "replay_examples": 20,
+        "replay_tokens": 9038,
+        "local_anchor_loss": 2.288641047949107,
+        "forgetting": 0.001678450579527091,
+        "local_domain_loss": 2.05987651063849,
+        "improvement": 0.005611207167519616,
+        "next_rho": 0.2
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33855,
+        "local_anchor_loss": 2.2879327440897925,
+        "forgetting": 0.0009701467202125613,
+        "local_domain_loss": 2.0051538227317636,
+        "improvement": 0.025482960736669558,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.2,
+        "replay_examples": 40,
+        "replay_tokens": 16011,
+        "local_anchor_loss": 2.287776121350911,
+        "forgetting": 0.0008135239813311657,
+        "local_domain_loss": 1.4020111636644847,
+        "improvement": 0.007330159516995671,
+        "next_rho": 0.2
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 32943,
+        "local_anchor_loss": 2.287107876566491,
+        "forgetting": 0.00014527919691120772,
+        "local_domain_loss": 1.9943434381484986,
+        "improvement": 0.03760253190994245,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 7,
+    "global_anchor_loss": 2.2871493635034494,
+    "global_forgetting": 0.00018676613386947594,
+    "global_domain_loss": {
+      "1": 2.063615532056971,
+      "2": 2.016494781256925,
+      "3": 1.4059281987270398,
+      "4": 2.0150008726119997
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.2,
+        "replay_examples": 40,
+        "replay_tokens": 15215,
+        "local_anchor_loss": 2.28812061616953,
+        "forgetting": 0.0011580187999502556,
+        "local_domain_loss": 2.059066993965173,
+        "improvement": 0.005391269827164535,
+        "next_rho": 0.4
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33719,
+        "local_anchor_loss": 2.287815150935176,
+        "forgetting": 0.0008525535655961036,
+        "local_domain_loss": 1.9980396288806659,
+        "improvement": 0.024913336644659667,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.2,
+        "replay_examples": 40,
+        "replay_tokens": 17094,
+        "local_anchor_loss": 2.288273662141302,
+        "forgetting": 0.001311064771722048,
+        "local_domain_loss": 1.4021558902525604,
+        "improvement": 0.005519569364239141,
+        "next_rho": 0.4
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33281,
+        "local_anchor_loss": 2.287409107326723,
+        "forgetting": 0.0004465099571429043,
+        "local_domain_loss": 1.9906941866874694,
+        "improvement": 0.03229270935058581,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 8,
+    "global_anchor_loss": 2.2873423989810733,
+    "global_forgetting": 0.0003798016114933134,
+    "global_domain_loss": {
+      "1": 2.0632422929809864,
+      "2": 2.0116880437487366,
+      "3": 1.4051084258483888,
+      "4": 2.0084269404411317
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 34528,
+        "local_anchor_loss": 2.2880356388667926,
+        "forgetting": 0.0010730414972126567,
+        "local_domain_loss": 2.0608385464232133,
+        "improvement": 0.0027769856337576115,
+        "next_rho": 0.4
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 34328,
+        "local_anchor_loss": 2.287966466799073,
+        "forgetting": 0.0010038694294931538,
+        "local_domain_loss": 1.9995218931297425,
+        "improvement": 0.016972888127182673,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33589,
+        "local_anchor_loss": 2.2879855775702507,
+        "forgetting": 0.001022980200670709,
+        "local_domain_loss": 1.401608199621322,
+        "improvement": 0.004319999105717676,
+        "next_rho": 0.4
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 34408,
+        "local_anchor_loss": 2.288209035687358,
+        "forgetting": 0.0012464383177781535,
+        "local_domain_loss": 1.9879552555084228,
+        "improvement": 0.02704561710357689,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 9,
+    "global_anchor_loss": 2.287051866070437,
+    "global_forgetting": 8.92687008571258e-05,
+    "global_domain_loss": {
+      "1": 2.0628958786288383,
+      "2": 2.0054145736253344,
+      "3": 1.4037674102090638,
+      "4": 2.0035268378257753
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33770,
+        "local_anchor_loss": 2.288667350413971,
+        "forgetting": 0.0017047530443909942,
+        "local_domain_loss": 2.059852611494255,
+        "improvement": 0.003389681486731355,
+        "next_rho": 0.4
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 34797,
+        "local_anchor_loss": 2.288285164051592,
+        "forgetting": 0.0013225666820120274,
+        "local_domain_loss": 1.9886834439615728,
+        "improvement": 0.023004599787163738,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33553,
+        "local_anchor_loss": 2.2874088767768654,
+        "forgetting": 0.000446279407285477,
+        "local_domain_loss": 1.3999209270168436,
+        "improvement": 0.005187498831545234,
+        "next_rho": 0.4
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 34404,
+        "local_anchor_loss": 2.287843874373738,
+        "forgetting": 0.0008812770041579654,
+        "local_domain_loss": 1.9848928403854371,
+        "improvement": 0.023534100055694562,
+        "next_rho": 0.4
+      }
+    ]
+  },
+  {
+    "round": 10,
+    "global_anchor_loss": 2.2876189910865725,
+    "global_forgetting": 0.0006563937169925538,
+    "global_domain_loss": {
+      "1": 2.0624452031599048,
+      "2": 1.999397270877608,
+      "3": 1.4028451294535889,
+      "4": 1.9986538076400757
+    },
+    "nodes": [
+      {
+        "node": 1,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33343,
+        "local_anchor_loss": 2.2881414717438675,
+        "forgetting": 0.0011788743742875418,
+        "local_domain_loss": 2.059840755796022,
+        "improvement": 0.0030551228328161706,
+        "next_rho": 0.4
+      },
+      {
+        "node": 2,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33678,
+        "local_anchor_loss": 2.28850683099659,
+        "forgetting": 0.001544233627010172,
+        "local_domain_loss": 1.985387978398558,
+        "improvement": 0.02002659522677641,
+        "next_rho": 0.4
+      },
+      {
+        "node": 3,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 33178,
+        "local_anchor_loss": 2.287898448954428,
+        "forgetting": 0.0009358515848481019,
+        "local_domain_loss": 1.4003720366881378,
+        "improvement": 0.003395373520926004,
+        "next_rho": 0.4
+      },
+      {
+        "node": 4,
+        "rho": 0.4,
+        "replay_examples": 80,
+        "replay_tokens": 35355,
+        "local_anchor_loss": 2.289039174578427,
+        "forgetting": 0.00207657720884713,
+        "local_domain_loss": 1.9815167927742003,
+        "improvement": 0.022010045051575,
+        "next_rho": 0.4
+      }
+    ]
+  }
+]
